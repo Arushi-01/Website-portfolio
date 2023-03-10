@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content ="IE=edge">
+        <meta name="viewport" content ="width=device-width,initial-scale=1.0">
+        <title>Personal Portfolio Website</title>
+        <link rel ="stylesheet" href="/CSS/style.css">
+        <script src="https://kit.fontawesome.com/c2bf4c8d7f.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                  <a href="#" class="nav_logo"><span>A</span>rushi</a>
+                    <ul> 
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#achievement">Achievement</a></li>
+                        <li><a href="https://www.linkedin.com/in/arushi-bhatnagar-78802121a/">Linkedin</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-text">
+                    <p> Currently a student at SPPU.</p>
+                    <h1> Hi, I'm <span>Arushi</span><br>Bhatnagar</h1>
+                </div>
+            </div>
+        </div>
+        <!---------------ABOUT--------------->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="profile pic.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>Hello, My name is Arushi Bhatnagar, currently a Third year Computer Enginering student at Bharati Vidyapeeth College of Engineering,Lavale,Pune.
+                            I am a passionate and enthusiastic student. I know languages like Python, Java, HTML, CSS, JS and Nodejs.
+
+                            I'm also a National level archer in field archery, played for Maharashtra and Won Bronze medal at individual & team events at Amritsar. 
+                            Played State level Target archery player played for Maharashtra at school level.
+
+                            My other hobbies also include photography, travelling and painting.
+                        </p>
+                        <div class="tab-title">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links"onclick="opentab('Projects')">Projects</p>
+                            <p class="tab-links"onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li> <span>HTML</span><br>Hypertext Markup Language or HTML is the standard markup language
+                                for documents designed to be displayed in a web browser.</li>
+                                <li> <span>CSS</span><br>Style Sheets(CSS) is a stylesheet language used to describe
+                                the presentation of a document written in HTML or XML.</li>
+                                <li> <span>JavaScript</span><br>JS is a lightweight,interpreted or just-in-time compiled programming
+                                language with first-class function.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Projects">
+                            <ul>
+                                <li>Shopping list app</li>
+                                <li>Youtube Video downloader</li>
+                                <li>Tic-tac-toe</li>
+                                <li>Number Guessing game</li>
+                                <li>Rock paper scissors</li>
+                                <li>Url Shortner</li>
+                                <li>Mad libs</li>
+                                <li>Calculator</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents"id="education">
+                            <ul>
+                                <li> <span>2024</span><br>Pursuing B.E from Bharati Vidyapeeth College of Engineering,lavale,Pune</li>
+                                <li> <span>2020</span><br>HSC from Sri chaitanya Jr. College,Pune</li>
+                                <li> <span>2018</span><br>SSC from Prodigy public School,Pune</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!------------------------Achievements--------------------->
+        <div id="achievement">
+            <div class="container">
+                <h1 class="sub-title"> My Achievements</h1>
+                <div class="achievement-list">
+                    <div>
+                    
+                        <h2>Certified in Python.</h2>
+                        <P>
+                            From Progate.
+                        </P>
+                    </div>
+                    <div>
+                        <h2>Certified in web development</h2>
+                        <P>
+                            From Progate.
+                        </P>
+                    </div>
+                    <div>
+                        <h2>Certified in Java</h2>
+                        <P>
+                            From Linked Learning.
+                        </P>
+                    </div>
+
+                </div>
+                 
+            </div>
+
+        </div>
+<!---------------------------CONTACT------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>guinnessarushi@gmail.com</p>
+                <p><i class ="fas fa-phone-square-alt"></i>9325178171</p>
+                <div class="social-icons">
+                    <a href=""><i class= "fab fa-facebook"></i></a>
+                    <a href=""><i class= "fab fa-twitter-square"></i></a>
+                    <a href=""><i class= "fab fa-instagram"></i></a>
+                    <a href=""><i class= "fab fa-linkedin"></i></a>
+                </div>
+                <a href="images/CV.pdf"download class="btn btn2">Download CV</a>
+
+
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="name" placeholder="Your Name"required>
+                    <input type="email" name="email"placeholder="Your Email"required>
+                    <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Arushi Bhatnagar  </p>
+        
+    </div></div>
+
+        <script>
+            var tablinks=document.getElementsByClassName("tab-links");
+            var tabcontents=document.getElementsByClassName("tab-contents");
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab")
+            }    
+        </script>
+
+    </body>
+</html>
